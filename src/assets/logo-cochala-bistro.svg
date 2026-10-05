@@ -1,0 +1,36 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Cochala Bistro">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#C0392B"/>
+      <stop offset="100%" stop-color="#7A2415"/>
+    </radialGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0602A"/>
+      <stop offset="100%" stop-color="#A8321F"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="98" fill="url(#bgGrad)"/>
+
+  <g>
+    <polygon points="138.5,100.0 194.8,85.0 194.8,115.0" fill="#F2B134"/>
+    <polygon points="133.3,119.2 189.6,134.4 174.6,160.4" fill="#E0602A"/>
+    <polygon points="119.2,133.3 160.4,174.6 134.4,189.6" fill="#F2B134"/>
+    <polygon points="100.0,138.5 115.0,194.8 85.0,194.8" fill="#E0602A"/>
+    <polygon points="80.8,133.3 65.6,189.6 39.6,174.6" fill="#F2B134"/>
+    <polygon points="66.7,119.2 25.4,160.4 10.4,134.4" fill="#E0602A"/>
+    <polygon points="61.5,100.0 5.2,115.0 5.2,85.0" fill="#F2B134"/>
+    <polygon points="66.7,80.8 10.4,65.6 25.4,39.6" fill="#E0602A"/>
+    <polygon points="80.7,66.7 39.6,25.4 65.6,10.4" fill="#F2B134"/>
+    <polygon points="100.0,61.5 85.0,5.2 115.0,5.2" fill="#E0602A"/>
+    <polygon points="119.2,66.7 134.4,10.4 160.4,25.4" fill="#F2B134"/>
+    <polygon points="133.3,80.7 174.6,39.6 189.6,65.6" fill="#E0602A"/>
+  </g>
+
+  <circle cx="100" cy="100" r="62" fill="url(#innerGrad)" stroke="#F7E7C8" stroke-width="3"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#F2B134" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.8"/>
+
+  <text x="100" y="116" font-family="'Plus Jakarta Sans', Georgia, sans-serif" font-weight="800" font-size="52" fill="#FFF6E5" text-anchor="middle" letter-spacing="1">CB</text>
+
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#4A160B" stroke-width="3"/>
+</svg>

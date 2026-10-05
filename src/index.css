@@ -1,0 +1,12 @@
+:root {
+  font-family: "Work Sans", sans-serif;
+  color: #001b3c;
+  background: #f9f9ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body { min-width: 320px; }
+#root { min-height: 100vh; }

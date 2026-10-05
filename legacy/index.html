@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cochala Bistro | Sabor Boliviano</title>
+
+  <!-- TIPOGRAFÍAS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ICONOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="cart-modal.css">
+  <script src="script.js" defer></script>
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER / NAVEGACIÓN -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand">
+        <img src="logo-cochala-bistro.svg" alt="Logo Cochala Bistro">
+        <span>Cochala Bistro</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <nav class="nav">
+        <a href="#inicio" class="nav-link active">INICIO</a>
+        <a href="#menu" class="nav-link">MENÚ</a>
+        <a href="#sabores" class="nav-link">SABORES</a>
+        <a href="#promociones" class="nav-link">PROMOCIONES</a>
+        <a href="#nosotros" class="nav-link">SOBRE NOSOTROS</a>
+        <a href="#cochabamba" class="nav-link">LLAJTA QUERIDA</a>
+        <a href="#ubicaciones" class="nav-link">UBICACIONES</a>
+      </nav>
+
+      <a href="#ubicaciones" class="nav-order">PEDIR AHORA</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1. INICIO -->
+    <section id="inicio" class="hero section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="eyebrow">SABOR COCHABAMBINO</span>
+          <h1>Comida rápida,<br><span>hecha en BOLIVIA.</span></h1>
+          <p>Rápida, rica y hecha para ti. Disfruta los sabores bolivianos que amas, preparados con ingredientes locales y frescos.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">VER MENÚ <span class="material-symbols-outlined">arrow_forward</span></a>
+            <a href="#promociones" class="btn btn-light">VER PROMOCIONES</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <div class="hero-circle"></div>
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdf6hBJkWqggSkEPhd0JE9tW8vvNpjhIRo4JhoOYq1OsqgCKffZ1xlbGntPD25Qf24fOr1nWtUHgCcgV8d6aAmAPVxY-iVlFUelBRSlNoOnXpR_frGUHrZGrRJXSa7u5H7v-QByTj73luX9O5ama7JdIPsnTtguy7wnhALP032vYzROaFusnrKm9EfLPyC6SNS0XBjdFHiDQ6ZDA-65uaLSwbccF2QSG2If2AuWOV8iv8cz6T8gDlsvg" alt="Pique Macho">
+          <div class="hero-badge">
+            <span class="material-symbols-outlined">local_fire_department</span>
+            <div><small>MÁS PEDIDO</small><strong>Pique Macho</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="categories section">
+      <div class="container">
+        <div class="section-heading"><span>—</span><h2>¿Qué estás buscando?</h2><span>—</span></div>
+        <div class="category-grid">
+          <a href="#menu" class="category-card"><span class="material-symbols-outlined">lunch_dining</span><strong>Platos típicos</strong><small>Cochabambinos</small></a>
+          <a href="#menu" class="category-card"><span class="material-symbols-outlined">restaurant</span><strong>Platos típicos</strong><small>Paceños</small></a>
+          <a href="#menu" class="category-card"><span class="material-symbols-outlined">local_drink</span><strong>Bebidas</strong><small>Refrescantes</small></a>
+          <a href="#promociones" class="category-card"><span class="material-symbols-outlined">takeout_dining</span><strong>Combos</strong><small>Para compartir</small></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="featured section section-soft">
+      <div class="container">
+        <div class="section-title-row">
+          <div><span class="eyebrow">FAVORITOS</span><h2>Productos destacados</h2></div>
+          <a href="#menu" class="text-link">Ver menú completo →</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdf6hBJkWqggSkEPhd0JE9tW8vvNpjhIRo4JhoOYq1OsqgCKffZ1xlbGntPD25Qf24fOr1nWtUHgCcgV8d6aAmAPVxY-iVlFUelBRSlNoOnXpR_frGUHrZGrRJXSa7u5H7v-QByTj73luX9O5ama7JdIPsnTtguy7wnhALP032vYzROaFusnrKm9EfLPyC6SNS0XBjdFHiDQ6ZDA-65uaLSwbccF2QSG2If2AuWOV8iv8cz6T8gDlsvg" alt="Pique Macho">
+            <div class="product-info">
+              <h3>Pique Macho</h3>
+              <p>Carne, papas, salchicha, salsa y huevo, con un toque picante.</p>
+              <div class="product-bottom"><strong>Bs. 25</strong><button class="add-btn" data-product="Pique Macho">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Majadito_con_carne_de_res.jpg" alt="Majadito batido">
+            <div class="product-info">
+              <h3>Majadito Batido</h3>
+              <p>Arroz batido con charque, huevo, plátano y sazón boliviana.</p>
+              <div class="product-bottom"><strong>Bs. 35</strong><button class="add-btn" data-product="Majadito Batido">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Charquic%C3%A1n_Cochabambino.jpg" alt="Charque">
+            <div class="product-info">
+              <h3>Charque</h3>
+              <p>Carne deshidratada y sazonada con quesillo, papa y mote.</p>
+              <div class="product-bottom"><strong>Bs. 18</strong><button class="add-btn" data-product="Charque">+</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MENÚ -->
+    <section id="menu" class="menu-section section">
+      <div class="container">
+        <div class="section-heading"><span>—</span><h2>NUESTRO MENÚ</h2><span>—</span></div>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-btn" data-filter="cochala" aria-pressed="false">Cochabamba</button>
+          <button class="filter-btn" data-filter="paceño" aria-pressed="false">Paceños</button>
+          <button class="filter-btn" data-filter="bebida" aria-pressed="false">Bebidas</button>
+          <button class="filter-btn" data-filter="combo" aria-pressed="false">Combos</button>
+        </div>
+
+        <div class="menu-grid">
+
+          <article class="menu-card" data-category="cochala">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdf6hBJkWqggSkEPhd0JE9tW8vvNpjhIRo4JhoOYq1OsqgCKffZ1xlbGntPD25Qf24fOr1nWtUHgCcgV8d6aAmAPVxY-iVlFUelBRSlNoOnXpR_frGUHrZGrRJXSa7u5H7v-QByTj73luX9O5ama7JdIPsnTtguy7wnhALP032vYzROaFusnrKm9EfLPyC6SNS0XBjdFHiDQ6ZDA-65uaLSwbccF2QSG2If2AuWOV8iv8cz6T8gDlsvg" alt="Pique Macho">
+            <div><h3>Pique Macho</h3><p>Carne, papas, salchicha, huevo y salsa.</p><strong>Bs. 25</strong></div>
+            <button class="order-btn" data-product="Pique Macho">PEDIR</button>
+          </article>
+
+          <article class="menu-card" data-category="paceño">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Silpancho_Cochabambino.jpg" alt="Silpancho">
+            <div><h3>Silpancho</h3><p>Carne apanada, arroz, papa, huevo y sarsa.</p><strong>Bs. 30</strong></div>
+            <button class="order-btn" data-product="Silpancho">PEDIR</button>
+          </article>
+
+          <article class="menu-card" data-category="cochala">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Charquic%C3%A1n_Cochabambino.jpg" alt="Charque">
+            <div><h3>Charque</h3><p>Carne deshidratada, quesillo, papa y mote.</p><strong>Bs. 18</strong></div>
+            <button class="order-btn" data-product="Charque">PEDIR</button>
+          </article>
+
+          <article class="menu-card" data-category="bebida">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Refresco_de_mocochinchi.jpg" alt="Mocochinchi">
+            <div><h3>Mocochinchi</h3><p>Bebida tradicional boliviana, fresca y natural.</p><strong>Bs. 8</strong></div>
+            <button class="order-btn" data-product="Mocochinchi">PEDIR</button>
+          </article>
+
+          <article class="menu-card" data-category="combo">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdf6hBJkWqggSkEPhd0JE9tW8vvNpjhIRo4JhoOYq1OsqgCKffZ1xlbGntPD25Qf24fOr1nWtUHgCcgV8d6aAmAPVxY-iVlFUelBRSlNoOnXpR_frGUHrZGrRJXSa7u5H7v-QByTj73luX9O5ama7JdIPsnTtguy7wnhALP032vYzROaFusnrKm9EfLPyC6SNS0XBjdFHiDQ6ZDA-65uaLSwbccF2QSG2If2AuWOV8iv8cz6T8gDlsvg" alt="Combo Cochala">
+            <div><h3>Combo Cochala</h3><p>Pique Macho + 2 refrescos de mocochinchi.</p><strong>Bs. 55</strong></div>
+            <button class="order-btn" data-product="Combo Cochala">PEDIR</button>
+          </article>
+
+          <article class="menu-card" data-category="cochala">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salte%C3%B1as_de_pollo.jpg" alt="Salteña de Pollo">
+            <div><h3>Salteña de Pollo</h3><p>Pollo, papa, huevo y aceituna.</p><strong>Bs. 10</strong></div>
+            <button class="order-btn" data-product="Salteña de Pollo">PEDIR</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SABORES DE COCHABAMBA — tarjetas que giran al pasar el cursor -->
+    <section id="sabores" class="flavors section section-soft">
+      <div class="container">
+        <div class="section-heading"><span>—</span><h2>SABORES DE COCHABAMBA</h2><span>—</span></div>
+        <p class="flavors-intro">Pasa el cursor sobre cada plato para ver de qué está hecho y dónde más se disfruta en Cochabamba.</p>
+
+        <div class="flavor-grid">
+
+          <div class="flavor-card" tabindex="0">
+            <div class="flavor-card-inner">
+              <div class="flavor-card-front">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdf6hBJkWqggSkEPhd0JE9tW8vvNpjhIRo4JhoOYq1OsqgCKffZ1xlbGntPD25Qf24fOr1nWtUHgCcgV8d6aAmAPVxY-iVlFUelBRSlNoOnXpR_frGUHrZGrRJXSa7u5H7v-QByTj73luX9O5ama7JdIPsnTtguy7wnhALP032vYzROaFusnrKm9EfLPyC6SNS0XBjdFHiDQ6ZDA-65uaLSwbccF2QSG2If2AuWOV8iv8cz6T8gDlsvg" alt="Pique Macho">
+                <span class="flavor-name">Pique Macho</span>
+              </div>
+              <div class="flavor-card-back">
+                <h3>Pique Macho</h3>
+                <p><strong>Hecho de:</strong> carne de res, papas fritas, salchicha, tomate, locoto y huevo frito.</p>
+                <p><strong>Dónde encontrarlo:</strong> plato típico de la Cancha y los restaurantes del centro de Cochabamba.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flavor-card" tabindex="0">
+            <div class="flavor-card-inner">
+              <div class="flavor-card-front">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Silpancho_Cochabambino.jpg" alt="Silpancho">
+                <span class="flavor-name">Silpancho</span>
+              </div>
+              <div class="flavor-card-back">
+                <h3>Silpancho</h3>
+                <p><strong>Hecho de:</strong> carne apanada, arroz, papa, huevo frito y ensalada.</p>
+                <p><strong>Dónde encontrarlo:</strong> muy popular en la Av. Ballivián y los mercados del centro.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flavor-card" tabindex="0">
+            <div class="flavor-card-inner">
+              <div class="flavor-card-front">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Charquic%C3%A1n_Cochabambino.jpg" alt="Charque">
+                <span class="flavor-name">Charque</span>
+              </div>
+              <div class="flavor-card-back">
+                <h3>Charque</h3>
+                <p><strong>Hecho de:</strong> charque de res, mote, queso, papa y llajua.</p>
+                <p><strong>Dónde encontrarlo:</strong> presente en picanterías tradicionales de la zona sur y central.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROMOCIONES -->
+    <section id="promociones" class="promotions section">
+      <div class="container">
+        <div class="section-heading"><span>—</span><h2>PROMOCIONES</h2><span>—</span></div>
+        <div class="promo-grid">
+          <article class="promo-card promo-main">
+            <span class="promo-tag">PROMO DEL DÍA</span>
+            <h3>Combo Cochala<br>Para Dos</h3>
+            <p>1 Pique Macho + 2 refrescos de Mocochinchi. ¡Ideal para compartir!</p>
+            <div class="promo-price"><strong>Bs. 55</strong><del>Bs. 65</del></div>
+            <button class="btn btn-dark order-btn" data-product="Combo Cochala Para Dos">AÑADIR A LA ORDEN</button>
+          </article>
+
+          <article class="promo-card promo-secondary">
+            <span class="promo-tag">PARA COMPARTIR</span>
+            <h3>2 Platos<br>+ 2 Bebidas</h3>
+            <p>Elige tus platos favoritos y acompáñalos con nuestras bebidas.</p>
+            <strong>Desde Bs. 50</strong>
+            <button class="btn btn-light order-btn" data-product="Promo 2 Platos + 2 Bebidas">PEDIR PROMO</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SOBRE NOSOTROS -->
+    <section id="nosotros" class="about section section-soft">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYJDxh1PV7NZ9208D2zNiV-U1MZOJXDNf2Um0ZXlkgxPOYLzVf9_kJ32yKF3i_8rtFvYVRtsjeEI_1mtH2k3eBPTYEDf_Tq9Ze1jThunWIqhK8Gh-Fgkv-kPstjqLEF6Ib3A99ZPSBYcdNQavcx59jyZyyA6SlajkfBGH1WYinDopcaO1YtAEfj53A9-gcO82QNKE1DF6uUWzsYiTL4W_dQ3pHVAt0i9l24WGCPlFho6BxzXfAYUO_Yw" alt="Comida de Cochala Bistro">
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">SOBRE NOSOTROS</span>
+          <h2>El sabor de Bolivia, directo a tu mesa.</h2>
+          <p>En Cochala Bistro celebramos la comida boliviana con una propuesta rápida, rica y cercana.</p>
+          <p>Nuestro menú reúne sabores tradicionales de diferentes regiones de Bolivia en un espacio pensado para disfrutar, compartir y pedir fácilmente.</p>
+          <p>Queremos que cada plato conserve ese sabor casero y auténtico que nos representa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LLAJTA QUERIDA — carruseles de la ciudad de Cochabamba -->
+    <section id="cochabamba" class="city section">
+      <div class="container">
+        <div class="section-heading"><span>—</span><h2>LLAJTA QUERIDA</h2><span>—</span></div>
+        <p class="flavors-intro">La llajta que le da sabor a cada plato de nuestro menú.</p>
+
+        <div class="city-grid">
+
+          <div class="carousel" aria-roledescription="carrusel" aria-label="Íconos de Cochabamba">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cristo_de_la_Concordia_-_Cochabamba.jpg" alt="Cristo de la Concordia">
+                <span class="slide-caption">Cristo de la Concordia</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pareja_de_loros_en_la_plaza_Col%C3%B3n_en_Cochabamba%2C_el_a%C3%B1o_2019.jpg" alt="Plaza Colón">
+                <span class="slide-caption">Plaza Colón</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Portales_-_Cochabamba_-_Bolivia.jpg" alt="Palacio Portales">
+                <span class="slide-caption">Palacio Portales</span>
+              </div>
+            </div>
+            <button class="carousel-prev" aria-label="Foto anterior">‹</button>
+            <button class="carousel-next" aria-label="Foto siguiente">›</button>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="carousel" aria-roledescription="carrusel" aria-label="Mercados y calles de Cochabamba">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_25_de_Mayo._MM.jpg" alt="Mercado La Cancha">
+                <span class="slide-caption">Mercado La Cancha</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paseo_del_Prado%2C_Cochabamba.jpg" alt="El Prado">
+                <span class="slide-caption">El Prado</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/La_bouch%C3%A8re_de_Cochabamba._01.jpg" alt="Picanterías tradicionales">
+                <span class="slide-caption">Picanterías tradicionales</span>
+              </div>
+            </div>
+            <button class="carousel-prev" aria-label="Foto anterior">‹</button>
+            <button class="carousel-next" aria-label="Foto siguiente">›</button>
+            <div class="carousel-dots"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿CÓMO FUNCIONA? -->
+    <section class="how section section-soft">
+      <div class="container">
+        <div class="section-heading"><span>—</span><h2>¿CÓMO FUNCIONA?</h2><span>—</span></div>
+        <div class="steps">
+          <div class="step"><span>1</span><span class="material-symbols-outlined step-icon">list_alt</span><h3>Elige</h3><p>tu producto favorito.</p></div>
+          <div class="step"><span>2</span><span class="material-symbols-outlined step-icon">price_check</span><h3>Revisa</h3><p>precio y disponibilidad.</p></div>
+          <div class="step"><span>3</span><span class="material-symbols-outlined step-icon">chat</span><h3>Realiza tu pedido</h3><p>por WhatsApp.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. UBICACIONES -->
+    <section id="ubicaciones" class="locations section">
+      <div class="container">
+        <div class="section-heading"><span>—</span><h2>UBICACIONES</h2><span>—</span></div>
+
+        <div class="location-card">
+          <div class="location-info">
+            <span class="material-symbols-outlined location-icon">location_on</span>
+            <div>
+              <h3>Cochala Bistro</h3>
+              <p>Av. América Este<br>Cochabamba, Bolivia</p>
+              <p><strong>Horario:</strong><br>Lun - Dom · 11:00 - 23:00</p>
+            </div>
+          </div>
+
+          <div class="map-box">
+            <span class="material-symbols-outlined">map</span>
+            <p>Encuéntranos en Cochabamba</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.+America+Este+Cochabamba+Bolivia" target="_blank" rel="noopener">ABRIR EN GOOGLE MAPS</a>
+          </div>
+        </div>
+
+        <div class="final-cta">
+          <h2>¿LISTO PARA PEDIR?</h2>
+          <p>Tu comida favorita, en minutos.</p>
+          <button class="btn btn-whatsapp order-btn" data-product="Pedido general">
+            <span class="material-symbols-outlined">chat</span> HACER MI PEDIDO
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="brand footer-brand">
+          <img src="logo-cochala-bistro.svg" alt="Logo Cochala Bistro">
+          <span>Cochala Bistro</span>
+        </a>
+        <p>Comida rápida<br>hecha en Cochabamba.</p>
+      </div>
+
+      <div>
+        <h3>ENCUÉNTRANOS</h3>
+        <p>Av. América Este<br>Cochabamba, Bolivia</p>
+      </div>
+
+      <div>
+        <h3>SÍGUENOS</h3>
+        <div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a></div>
+      </div>
+
+      <div>
+        <h3>CONTÁCTANOS</h3>
+        <p>707 00000</p>
+        <a href="#ubicaciones">Escríbenos por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="container copyright">© 2026 Cochala Bistro. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- NUEVO: botón flotante del carrito -->
+  <button id="cartFab" class="cart-fab" aria-label="Ver carrito">
+    <span class="material-symbols-outlined">shopping_cart</span>
+    <span class="cart-fab-count" id="cartCount">0</span>
+  </button>
+
+  <!-- NUEVO: modal de detalles del producto -->
+  <div id="product-modal" class="pm-modal" aria-hidden="true">
+    <div class="pm-overlay" data-close-modal></div>
+    <div class="pm-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="pm-close" data-close-modal aria-label="Cerrar">&times;</button>
+      <div class="pm-image"><img id="modalImage" src="" alt=""></div>
+      <div class="pm-info">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc" class="pm-desc"></p>
+        <div class="pm-price"><span>Precio unitario</span><strong id="modalPrice">Bs. 0</strong></div>
+        <div class="pm-qty">
+          <span>Cantidad</span>
+          <div class="pm-qty-control">
+            <button type="button" id="qtyMinus" aria-label="Restar">−</button>
+            <span id="qtyValue">1</span>
+            <button type="button" id="qtyPlus" aria-label="Sumar">+</button>
+          </div>
+        </div>
+        <button class="btn btn-primary pm-add-btn" id="modalAddBtn">AGREGAR AL CARRITO</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NUEVO: panel del carrito -->
+  <div id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-overlay" data-close-cart></div>
+    <div class="cart-panel" role="dialog" aria-modal="true" aria-label="Carrito de compras">
+      <div class="cart-header">
+        <h3><span class="material-symbols-outlined">shopping_cart</span> Tu pedido</h3>
+        <button class="cart-close" data-close-cart aria-label="Cerrar carrito">&times;</button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <p class="cart-empty" id="cartEmpty">Tu carrito está vacío. ¡Agrega algo rico del menú!</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total-row"><span>Total</span><strong id="cartTotal">Bs. 0</strong></div>
+
+        <div class="delivery-options">
+          <span class="delivery-label">¿Cómo quieres tu pedido?</span>
+          <label class="delivery-choice"><input type="radio" name="deliveryType" value="recoger" checked> Recoger en el local</label>
+          <label class="delivery-choice"><input type="radio" name="deliveryType" value="delivery"> Delivery</label>
+        </div>
+        <input type="text" id="deliveryAddress" class="delivery-address" placeholder="Dirección para el delivery">
+
+        <button class="btn btn-whatsapp cart-checkout-btn" id="checkoutBtn">
+          <span class="material-symbols-outlined">chat</span> PEDIR POR WHATSAPP
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status"></div>
+
+</body>
+</html>
